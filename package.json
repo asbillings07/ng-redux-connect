@@ -2,7 +2,7 @@
   "name": "ng-redux-connect",
   "version": "1.0.0",
   "description": "add Redux to your React components in your AngularJS application",
-  "main": "bundle.js",
+  "main": "dist/index.js",
   "keywords": [
     "redux",
     "react",
@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup --config"
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
   "author": "Aaron Billings <abdevelops@gmail.com> (https://github.com/asbillings07)",
   "license": "MIT",
@@ -22,14 +23,16 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/runtime": "^7.11.2",
     "@rollup/plugin-babel": "^5.2.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "react-redux": "^7.2.1",
-    "redux": "^4.0.5"
+    "@rollup/plugin-json": "^4.1.0"
   },
   "peerDependencies": {
-    "react": ">= 16.8.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-redux": ">= 7.2.0",
     "redux": ">= 3.7.1"
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/asbillings07/ng-redux-connect"
 }
