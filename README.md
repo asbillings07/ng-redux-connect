@@ -18,6 +18,9 @@ This package is especially useful if you coding in a project where you can't acc
 First, you will need to setup your redux store.
 Then, in a new file import your createStore or configureStore
 
+reduxConnector provides your component with a redux Provider
+you will only need to provide the store.
+
 Finally, import reduxConnector as show below:
 ```
 
@@ -27,7 +30,7 @@ import { reduxConnector } from 'ng-redux-connect'
 const store = createStore()
 
 export const reduxConnnect = reduxConnector(store)
-...
+
 ```
 
 Then just import and wrap your component like so:
@@ -37,8 +40,7 @@ import { reduxConnect } from '../whereEverYouCreatedTheReduxConnector'
 const CoursesWithRedux = reduxConnect(Courses)
 
 ```
-That's it, now you can use redux like you would before
-...
+That's it, now you can use redux like you would before.
 ```
 
 ## Adding extra functionality
