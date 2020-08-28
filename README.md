@@ -91,6 +91,8 @@ export const composerConnect = composer(reduxConnnect, addReduxPersist)
 ```
 Finally, instead of wrapping your component in the reduxConnect,
 you can wrap it in the composerConnect
+
+composerConnect(Component)
 ```
 
 ```
@@ -107,6 +109,6 @@ const addReduxPersist = (Component) => (props) => {
 
 // we are passing in both the reduxConnect and reduxPersist HOC
 // then we are calling the composer function passing in our component
-const WrappedApp = composer(reduxConnect, addReduxPersist)(App)
+const WrappedApp = composer(reduxConnect, addReduxPersist)(Component)
 
 ```
