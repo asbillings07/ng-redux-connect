@@ -1,28 +1,12 @@
-node_modules
+node_modules/
 .idea
 coverage
 dist
 .DS_Store
 .nvmrc
 npm-debug.log
-yarn-error.log
 
 eslint.json
-jasmine.json
-jasmine.*.json
-
-bin/*
-
-#*git*
-#.git*
-
-*.tar*
-*.gz*
-*dump*
-
-.~*
-
-logs/*.log
 
 .coverdata
 .coverrun
@@ -30,9 +14,4 @@ results/
 jsconfig.json
 .tern-project
 .vscode
-
 dist
-lib
-es
-coverage
-_book
